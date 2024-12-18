@@ -1,45 +1,61 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "~/.config/fastfetch/logo.txt",
-        "type": "file",
-        "color": {
-            "1": "38;5;83",
-            "2": "38;5;84",
-            "3": "38;5;85",
-            "4": "38;5;86",
-            "5": "38;5;87"
-        },
+        "source": "~/.config/fastfetch/logo.txt", 
         "padding": {
-            "right": 2
+            "top": 1
+        },
+        "color": {
+            "1": "36"
         }
     },
     "display": {
-        "color": {
-            "output": "white"
-        }
+        "separator": "  "
     },
     "modules": [
-        "title",
-        "separator",
-        "os",
-        "host",
-        "kernel",
-        "uptime",
-        "packages",
-        "shell",
-        "display",
-        "de",
-        "theme",
-        "icons",
-        "font",
-        "cursor",
-        "terminal",
-        "cpu",
-        "gpu",
-        "memory",
-        "swap",
-        "locale",
+        "break",
+        {
+            "type": "title",
+            "color": {
+                "user": "96",
+                "at": "99",
+                "host": "36"
+            }
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " os    ",
+            "keyColor": "90"
+        },
+        {
+            "type": "kernel",
+            "key": " kernel",
+            "keyColor": "90"
+        },
+        {
+            "type": "host",
+            "format": "{5} {1}",
+            "key": "󰍹 host  ",
+            "keyColor": "90"
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " pkgs  ",
+            "keyColor": "90"
+        },
+        {
+            "type": "uptime",
+            "format": "{2}h {3}m",
+            "key": " uptime",
+            "keyColor": "90"
+        },
+        {
+            "type": "memory",
+            "key": "󰍛 memory",
+            "keyColor": "90"
+        },
         "break",
         "colors"
     ]
