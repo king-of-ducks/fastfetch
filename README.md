@@ -3,6 +3,7 @@ This is my `fastfetch` config. Feel free to use it, copy and modify as you want
 
 # Requirements
 * Fastfetch (https://github.com/fastfetch-cli/fastfetch)
+* Nerd Fonts (https://nerdfonts.com)
 * Git (https://git-scm.com)
 
 # Installation (Unix)
